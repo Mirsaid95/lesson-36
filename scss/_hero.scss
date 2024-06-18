@@ -113,17 +113,19 @@
     }
 
     &__adidas{
+        width: 80%;
         display: flex;
+        // flex-direction: column;
         align-items: center;
         justify-content: center;
-        // justify-content: space-between;
         background-color: white;
         border-radius: 10px;
+        position: relative;
 
     }
 
     &__price-product{
-        width: 50%;
+        width: 30%;
         padding-left: 20px;
         display: flex;
         flex-direction: column;
@@ -153,11 +155,13 @@
         
     }
     &__price-img{
-        width: 50%;
+        width: 70%;
         position: relative;
         display: flex;
         align-items: center;
+        justify-content: flex-end;
         overflow: hidden;
+        padding-right: 80px;
     }
 
     &__ellipse{
@@ -203,6 +207,17 @@
         color: white;
         transform: rotate(-45deg);
         z-index: 3;
+    }
+}
+
+@media (min-width: 1160px){
+    .hero{
+
+
+        &__items{
+            display: flex;
+            flex-direction: row;
+        }
     }
 }
 
