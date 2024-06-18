@@ -1,0 +1,19 @@
+.brand{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__items{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+        gap: 20px;
+        background-color: #f2f2f2c0;
+
+        img{
+            width: 100%;
+        }
+    }
+}
