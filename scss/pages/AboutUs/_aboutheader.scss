@@ -1,0 +1,195 @@
+.header.toggle {
+    .header__list {
+        bottom: 0;
+        left: 0;
+        width: 40%;
+
+    }
+
+    .header__info-contact {
+        top: 0;
+        left: 0;
+        width: 40%;
+    }
+}
+
+.header {
+    background-color: #1F1D14;
+    position: relative;
+
+    &__nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+
+    }
+
+    &__logo-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+    }
+
+    &__logo-img {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__sport {
+        width: 40%;
+        font-size: 18px;
+        color: white;
+    }
+
+    &__logo-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__info-list {
+        font-size: 16px;
+        color: white;
+    }
+
+    &__list {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        height: 100vh;
+        background-color: rgba(13, 13, 13, 0.419);
+        left: 0;
+        bottom: -100%;
+        z-index: 1;
+        transition: 1s;
+
+    }
+
+    &__link {
+        color: white;
+        font-size: 16px;
+    }
+
+    &__info-contact {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: -100%;
+        left: 0;
+        height: 30vh;
+        z-index: 2;
+        background-color: rgb(1, 1, 1);
+        transition: 1s;
+        gap: 10px;
+    }
+    &__seven{
+        color: yellow;
+        font-size: 20px;
+    }
+
+    &__contact {
+        display: flex;
+        gap: 10px;
+        font-size: 16px;
+        color: white;
+    }
+    .fa-phone{
+        color: blue;
+    }
+    .fa-envelope{
+        color: orangered;
+    }
+
+    &__togl{
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        color: yellow;
+    }
+
+
+}
+
+@media (min-width: 786px){
+    .header{
+        &__nav{
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        &__button{
+            display: none;
+        }
+        &__sport{
+            font-size: 20px;
+        }
+        &__logo-link{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__link{
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        &__list{
+            // width: 80%;
+            position: static;
+            display: block;
+            flex-direction: row;
+            display: flex;
+            background-color: transparent;
+            
+        }
+        &__logo-info{
+            display: none;
+        }
+
+    }
+}
+
+@media (min-width: 1334px){
+    .header{
+            &__info-contact{
+            min-width: 308px;
+            background-color: transparent;
+            position: static;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 15px;
+        }
+        &__sport{
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        &__link{
+            font-size: 20px;
+            font-weight: 300;
+
+        }
+        &__contact{
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+        }
+        
+    }
+}

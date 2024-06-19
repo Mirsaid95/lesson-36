@@ -1,0 +1,35 @@
+.pageand{
+    width: 100%;
+    margin: 0 auto;
+
+    &__item{
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border: 1px solid;
+        border: none;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        padding: 20px;
+        
+    }
+
+    &__title{
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    &__icon-links{
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    &__link{
+        display: flex;
+        gap: 10px;
+    }
+}

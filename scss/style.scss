@@ -9,3 +9,19 @@
 @use './about';
 @use './brand';
 @use './footer';
+@use './pages/AboutUs/aboutheader';
+@use './pages/AboutUs/catalogheader';
+@use './pages/AboutUs/aboutHero';
+@use './pages/AboutUs/sale';
+@use './pages/AboutUs/aboutFooter';
+@use './pages/product/product';
+@use './pages/product/headerproduct';
+@use './pages/product/products';
+@use './pages/product/productFooter';
+@use './pages/Recommended/dumbbellheader';
+@use './pages/Recommended/headerdumbbell';
+@use './pages/Recommended/dumbbel';
+@use './pages/Recommended/dumbbelinfo';
+@use './pages/Recommended/similarproduct';
+@use './pages/usefulinformation/and.scss';
+
